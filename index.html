@@ -1,1 +1,63 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        p {
+            text-align: center;
+            font-size: 45px;
+            padding: 10px;
+            padding-top: 200px;
+            color: pink;
+            font-family: 'Labster', cursive;
+        }
+
+        .yesButton {
+            text-align: center;
+            padding: 10px;
+            position: absolute;
+            top: 330px;
+            left: 320px;
+            font-size: 30px;
+            font-family: 'Labster', cursive;
+        }
+
+        .notButton {
+            display: inline-block;
+            text-align: center;
+            position: absolute;
+            top: 330px;
+            left: 490px;
+            font-size: 30px;
+            padding: 10px;
+            font-family: 'Labster', cursive;
+        }
+
+        body {
+            background-color: black;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <title>My GirFriend</title>
+    <link rel="icon" href="./heart-solid.svg" type="image/png">
+</head>
+<body>
+    <p><strong>Lari &hearts;, will you marry me?</strong></p>
+    <button class="yesButton" onclick="yesButton()">&#10084;YES&#10084;</button>
+    <button class="notButton" onmousemove="notButtonMove(this)">&#128148;NOT&#128148;</button>
+</body>
+</html>
+<script>
+    function yesButton(){
+        alert("Eu te amo infinito meu amor!!\nQuero você para sempre na minha vida!!\nMinha mulher Maravilhosa!!")
+    }
+    function notButtonMove(x){
+        marginx = Math.floor(Math.random()*400)
+        marginy = Math.floor(Math.random()*400)
+
+        x.style.margin = marginy.toString() + 'px ' + marginx.toString() + 'px'
+    }
+</script>
